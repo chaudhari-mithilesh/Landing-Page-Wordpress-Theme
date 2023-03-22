@@ -1,0 +1,295 @@
+/*
+
+Theme Name: Landing Page Theme
+Theme Author: Mithilesh
+Description: This is a theme which can be used to setup landing pages for your sites.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: landingpage
+
+
+*/
+
+/* Universal Margin and Padding reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Header Navbar Section */
+
+.header .navbar {
+  height: 120px;
+  width: 100%;
+  background: #e63946;
+  text-align: center;
+}
+
+.header .navbar nav {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .navbar h1 {
+  font-size: 42px;
+  font-weight: 900;
+  background-color: #fff;
+  color: #e63946;
+  margin-left: 40px;
+}
+
+.header .navbar ul {
+  width: 50%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: 900;
+  color: #fff;
+}
+
+/* Hero Section */
+
+.hero {
+  height: 100vh;
+  background-image: url("Images/Hero.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.hero .hero-title {
+  font-size: 42px;
+  width: 50%;
+  text-align: left;
+  margin-left: 100px;
+}
+
+.hero .hero-subtext {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 24px;
+  width: 50%;
+  margin-left: 100px;
+}
+
+.tryit {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Loan Calculator Section */
+
+.loan-calculator {
+  font-family: "Roboto", sans-serif;
+  width: 600px;
+  margin: 2.4rem auto;
+  background-color: whitesmoke;
+  box-shadow: 0 12px 50px -11px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  color: #14213d;
+  overflow: hidden;
+}
+
+.loan-calculator,
+.loan-calculator * {
+  box-sizing: border-box;
+}
+.loan-calculator .top {
+  background-color: #14213d;
+  color: #fff;
+  padding: 32px;
+}
+
+.loan-calculator .top h2 {
+  margin-top: 0;
+}
+
+.loan-calculator form {
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+}
+
+.loan-calculator .title {
+  margin-bottom: 16px;
+}
+
+.loan-calculator form input {
+  font-size: 20px;
+  padding: 8px, 24px;
+  width: 100%;
+}
+
+.loan-calculator .result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.loan-calculator .result .left {
+  width: 100%;
+  padding: 8px 32px;
+}
+
+.loan-calculator .result .left h3 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.loan-calculator .result .value {
+  font-size: 30px;
+  font-weight: 900;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(20, 33, 61, 0.2);
+}
+
+.loan-calculator .result .value::before {
+  content: "₹";
+  font-size: 24px;
+  font-weight: 400;
+  margin-right: 6px;
+  opacity: 0.4;
+}
+
+.loan-calculator .calculate-btn {
+  background: #e63946;
+  color: #fff;
+  border: none;
+  padding: 8px 32px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 900;
+  cursor: pointer;
+  margin: 24px 0;
+}
+
+.loan-calculator .right {
+  width: 50%;
+}
+
+/* Footer Section */
+
+footer {
+  color: #fff;
+  min-height: 200px;
+  background: #e63946;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .container h3 {
+  margin-bottom: 30px;
+}
+
+footer .container .address {
+  max-width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+footer .container .address p {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer .container .link {
+  margin-right: 10%;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .social-media button {
+  background: none;
+  border: none;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 650px) {
+  .header .navbar {
+    height: auto;
+  }
+  .header .navbar nav {
+    padding: 25px;
+    flex-direction: column;
+  }
+
+  .header .navbar nav ul {
+    flex-direction: column;
+  }
+
+  .loan-calculator {
+    width: 90%;
+    max-width: 500px;
+  }
+
+  .loan-calculator form {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .loan-calculator .result {
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .hero {
+    height: auto;
+    padding: 20px;
+    background-image: url("Images/HeroM.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .hero .hero-title {
+    font-size: 38px;
+    margin-bottom: 20px;
+    width: 60%;
+    text-align: left;
+  }
+
+  .hero .hero-subtext {
+    font-size: 20pxpx;
+    width: 60%;
+  }
+
+  footer .container {
+    padding: 25px;
+  }
+
+  footer .container .link {
+    text-align: center;
+  }
+
+  footer .social-media button img {
+    width: 32px;
+    height: 32px;
+  }
+
+  footer .copyright {
+    padding: 25px;
+  }
+}
