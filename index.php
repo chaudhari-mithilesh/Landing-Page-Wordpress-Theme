@@ -38,7 +38,7 @@
     <div class="left">
         <div class="loan-emi">
         <h3>Loan EMI</h3>
-        <div class="value">123/div>
+        <div class="value">123</div>
         </div>
 
         <div class="total-interest">
